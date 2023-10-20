@@ -1,15 +1,13 @@
-/******************************
+/*************************
 
 脚本名称: 甲子排盘
-脚本作者：ios151
-更新时间：2023年8月20日 22:37
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+使用声明：此脚本仅供学习与交流，请勿转载与贩卖！
 
-***************************
+**************************
 
 [rewrite_local]
 
-^https:\/\/app.iyzbz.com\/app\/user\/selfinfo url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/jiazipaipan.js
+^https:\/\/app.iyzbz.com\/app\/user\/selfinfo url script-response-body https://raw.githubusercontent.com/2023djash/Surge/main/Jiazisuanming.js
 
 [mitm] 
 
