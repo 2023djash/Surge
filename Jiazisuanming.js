@@ -1,6 +1,6 @@
 /*************************
 
-脚本名称: 甲子排盘
+脚本名称: 甲子算命
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！
 
 **************************
@@ -17,6 +17,6 @@ hostname = app.iyzbz.com
 
 var = JSON.parse($response.body);
 data.memberLevel = 1;
-data.userName = "甲子排盘";
-data.expireTime = "2088-08-08T25:61:41.000+08:00";
+data.userName = "甲子算命";
+data.expireTime = "2088-08-08 22:22:22.00+08:00";
 $done({body : JSON.stringify});
