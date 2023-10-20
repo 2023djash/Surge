@@ -15,8 +15,8 @@ hostname = app.iyzbz.com
 
 *******************************/
 
-var = JSON.parse($response.body);
+var Yu = JSON.parse($response.body);
 data.memberLevel = 1;
 data.userName = "甲子算命";
-data.expireTime = "2088-08-08 22:22:22.00+08:00";
-$done({body : JSON.stringify});
+data.expireTime = "2023-13-32T25:61:41.000+08:00";
+$done({body : JSON.stringify(baby)});
