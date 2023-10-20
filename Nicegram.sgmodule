@@ -1,0 +1,15 @@
+#!name=NicegramProCrack
+#!desc=🔗 [2023/10/16 12:47:12] NicegramProCrack
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/MoYu/master/NicegramProCrack.js/_end_/NicegramProCrack.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Map Local]
+
+# > Nicegram☆解锁会员权限（2023-08-19）@ddgksf2013
+https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} data="https://github.com/ddgksf2013/dev/raw/main/NicegramProCrack.js"
+
+[MITM]
+
+hostname = %APPEND% restore-access.indream.app

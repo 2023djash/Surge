@@ -1,0 +1,14 @@
+#!name=mix
+#!desc=🔗 [2023/10/19 19:27:38] mix
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/chxm1023/Rewrite/main/mix.js/_end_/mix.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Script]
+
+mix_8 = type=http-response, pattern=^https?:\/\/cdn-bm\.camera360\.com\/api\/(mix\/(getinfo|purchase|recovery)|iap\/check-receipt), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mix.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% cdn-bm.camera360.com

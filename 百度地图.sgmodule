@@ -1,0 +1,30 @@
+#!name=baidumap
+#!desc=🔗 [2023/10/11 09:41:04] baidumap
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://gist.githubusercontent.com/ddgksf2013/beec132ca0c3570ffa0cf331bce8f82a/raw/baidumap.adblock.conf/_end_/baidumap.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Map Local]
+
+# > 百度地图_搜索框下足记Tips@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度地图_搜索推广@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度地图_开屏广告|首页左上角广告@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度地图_DNS处理@ddgksf2013
+^https?:\/\/httpdns\.baidubce\.com data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度地图_各种商业推广@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+# > 百度地图_我的页面地图动态@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+[MITM]
+
+hostname = %APPEND% 180.76.76.200,newclient.map.baidu.com,httpdns.baidubce.com
