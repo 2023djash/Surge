@@ -15,5 +15,5 @@ DOMAIN-SUFFIX,ixiguavideo.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,sign.douyinpic.com
-DOMAIN-KEYWORO,douyinpic.com
-DOMAIN-KEYWORO,sign.douyinpic.com
+DOMAIN-KEYWORO,douyinpic.com,Douyin
+DOMAIN-KEYWORO,sign.douyinpic.com,Douyin
