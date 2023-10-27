@@ -17,7 +17,7 @@
 
 [Script]
 
-移除京东广告_14 = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=personinfoBusiness, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/JD/JD_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+移除京东广告_14 = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=personinfoBusiness, script-path=https://raw.githubusercontent.com/2023djash/Surge/main/jd-tb-kaipin.js, requires-body=true, max-size=3145728, timeout=30
 
 [Map Local]
 
