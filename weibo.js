@@ -1,4 +1,4 @@
-// 2023-10-29 11:00
+// 2023-10-30 16:00
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -675,11 +675,42 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       }
       obj.cards = newCards;
     }
-  } else if (
-    url.includes("/2/statuses/container_timeline?") ||
-    url.includes("/2/statuses/container_timeline_unread") ||
-    url.includes("/2/statuses/container_timeline_hot")
-  ) {
+  } else if (url.includes("/2/statuses/container_timeline_hot") || url.includes("/2/statuses/unread_hot_timeline")) {
+    // 首页推荐tab信息流
+    for (let s of ["ad", "advertises", "trends", "headers"]) {
+      if (obj?.[s]) {
+        delete obj[s];
+      }
+    }
+    if (obj?.items?.length > 0) {
+      let newItems = [];
+      for (let item of obj.items) {
+        if (!isAd(item?.data)) {
+          if (item?.category === "feed") {
+            // 信息流推广
+            removeFeedAd(item?.data);
+            // 投票窗口
+            removeVoteInfo(item?.data);
+            newItems.push(item);
+          } else {
+            // 移除所有的推广
+            continue;
+          }
+        }
+      }
+      obj.items = newItems;
+    }
+    if (obj?.statuses?.length > 0) {
+      let newStatuses = [];
+      for (let item of obj.statuses) {
+        if (!isAd(item)) {
+          removeFeedAd(item);
+          newStatuses.push(item);
+        }
+      }
+      obj.statuses = newStatuses;
+    }
+  } else if (url.includes("/2/statuses/container_timeline?") || url.includes("/2/statuses/container_timeline_unread")) {
     // 首页关注tab信息流
     if (obj?.loadedInfo?.headers) {
       delete obj.loadedInfo.headers;
@@ -704,6 +735,26 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             }
             // 投票窗口
             removeVoteInfo(item?.data);
+            // 快转内容
+            if (item?.data?.screen_name_suffix_new?.length > 0) {
+              continue;
+            }
+            // 美妆精选季
+            if (item?.data?.title?.text?.includes("精选")) {
+              continue;
+            }
+            // 未关注博主
+            if (item?.data?.user?.following === false) {
+              continue;
+            }
+            // 关闭关注推荐
+            if (item?.data?.user?.unfollowing_recom_switch === 1) {
+              item.data.user.unfollowing_recom_switch = 0;
+            }
+            // 博主top100
+            if (item?.data?.tag_struct?.length > 0) {
+              item.data.tag_struct = [];
+            }
             newItems.push(item);
           } else if (item?.category === "feedBiz") {
             // 管理特别关注按钮
@@ -854,23 +905,6 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     }
     // 投票窗口
     removeVoteInfo(obj);
-  } else if (url.includes("/2/statuses/unread_hot_timeline")) {
-    // 首页推荐tab信息流
-    for (let s of ["ad", "advertises", "trends", "headers"]) {
-      if (obj?.[s]) {
-        delete obj[s];
-      }
-    }
-    if (obj?.statuses?.length > 0) {
-      let newStatuses = [];
-      for (let s of obj.statuses) {
-        if (!isAd(s)) {
-          removeFeedAd(s);
-          newStatuses.push(s);
-        }
-      }
-      obj.statuses = newStatuses;
-    }
   } else if (url.includes("/2/video/tiny_stream_video_list")) {
     if (obj?.statuses?.length > 0) {
       obj.statuses = obj.statuses.filter((m) => !(m.mblogtypename === "广告"));
@@ -937,6 +971,9 @@ function isAd(data) {
       return true;
     }
     if (data?.content_auth_info?.content_auth_title?.includes("广告")) {
+      return true;
+    }
+    if (data?.extend_info?.hasOwnProperty("ad")) {
       return true;
     }
   }
