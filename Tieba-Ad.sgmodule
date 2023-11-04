@@ -1,5 +1,5 @@
-#!name=tieba-qx
-#!desc=🔗 [2023/10/7 04:19:16] tieba-qx
+#!name=Tieba-Ad
+#!desc= [2023/10/7 04:19:16] tieba-qx
 
 # 🔗 模块链接
 #SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf/_end_/tieba-qx.sgmodule?type=qx-rewrite&target=surge-module
@@ -7,9 +7,9 @@
 
 [Script]
 
-tieba-json_5 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js, timeout=60, script-update-interval=0
+tieba-json_5 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/Surge/main/tieba-json.js, timeout=60, script-update-interval=0
 
-tieba-proto_6 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js, timeout=60, script-update-interval=0
+tieba-proto_6 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/2023djash/Surge/main/tieba-proto.js, timeout=60, script-update-interval=0
 
 [MITM]
 
