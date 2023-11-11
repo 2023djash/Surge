@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/2023djash/Surge/main/Mtxx.js
 
 [mitm]
 hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
