@@ -1,0 +1,14 @@
+#!name=PrettyUp
+#!desc=🔗 [2023/11/14 23:25:55] PrettyUp
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/PrettyUp.js/_end_/PrettyUp.sgmodule?type=qx-rewrite&target=surge-module
+
+
+[Script]
+
+PrettyUp_3 = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/PrettyUp.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% buy.itunes.apple.com
