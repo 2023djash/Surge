@@ -1,22 +1,3 @@
-/*************************************
-
-项目名称：美图秀秀 解锁SVIP
-下载地址：https://t.cn/AiN3YLHl
-脚本作者：chxm1023
-电报频道：https://t.me/chxm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
-
-**************************************
-
-[rewrite_local]
-^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/2023djash/Surge/main/Mtxx.js
-
-[mitm]
-hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
-
-*************************************/
-
-
 var chxm1023 = JSON.parse($response.body);
 const hysj = '/vip/prompt/query.json';
 const hyxx = '/vip/vip_show.json';
