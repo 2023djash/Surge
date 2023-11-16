@@ -1,15 +1,11 @@
 #!name=shipian
-#!desc=🔗 [2023/11/16 11:38:46] shipian
-
-# 🔗 模块链接
-#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/shipian.js/_end_/shipian.sgmodule?type=qx-rewrite&target=surge-module
-
+#!desc=shipian
 
 [Script]
 
-shipian_8 = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/shipian.js, timeout=60, script-update-interval=0
+shipian_8 = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/Surge/main/shipian.js, timeout=60, script-update-interval=0
 
-shipian_9 = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/shipian.js, timeout=60, script-update-interval=0
+shipian_9 = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/2023djash/Surge/main/shipian.js, timeout=60, script-update-interval=0
 
 [MITM]
 
