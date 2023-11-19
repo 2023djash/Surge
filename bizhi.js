@@ -12,8 +12,8 @@ if(user.test($request.url)){
       "isVIP" : 1,
       "userId" : "A66666666_B6666666666666-C66",
       "loginType" : 1,
-      "nickName" : "叮当猫の分享频道",
-      "headImageUrl" : "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ddm.png",
+      "nickName" : "如梦吟",
+      "headImageUrl" : "https://github.com/2023djash/blog-img/raw/main/CKMC8966.png",
       "objectId" : "666666666666666666666666",
       "createdAt" : "2023-09-09T09:09:09Z",
       "coin" : 99999
