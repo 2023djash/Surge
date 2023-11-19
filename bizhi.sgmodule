@@ -1,13 +1,9 @@
 #!name=bizhi
-#!desc=🔗 [2023/11/20 02:09:52] bizhi
-
-# 🔗 模块链接
-#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/chxm1023/Rewrite/main/bizhi.js/_end_/bizhi.sgmodule?type=qx-rewrite&target=surge-module
-
+#!desc=bizhi
 
 [Script]
 
-bizhi_10 = type=http-response, pattern=^https?:\/\/leancloud\.emotionwp\.com\/.+\/(classes|batch\/save), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bizhi.js, timeout=60, script-update-interval=0
+bizhi_10 = type=http-response, pattern=^https?:\/\/leancloud\.emotionwp\.com\/.+\/(classes|batch\/save), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/Surge/main/bizhi.js, timeout=60, script-update-interval=0
 
 [MITM]
 
