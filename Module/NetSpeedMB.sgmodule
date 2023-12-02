@@ -1,0 +1,17 @@
+#!name=𝐍𝐞𝐭𝐬𝐩𝐞𝐞𝐝.𝐦𝐛
+#!desc=𝐌𝐁
+##title：标题
+##mb:流量 默认3MB，最大可发送4MB，参数&mb=4
+##iconfast、iconmid、iconslow 分别对应测速快中慢时的图标
+##colorlow、colormid、colorhigh 分别对应延迟低中高时的图标颜色
+##配置实例：title=花里胡哨才是生产力&iconfast=bird&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F
+
+##⚠️不想变化多端？？
+##可直接使用最基本的panel参数，title、icon、icon-color
+##配置实例：titile=不想花里胡哨了&icon=hare&icon-color=#CDCDCD
+
+
+[Panel]
+NetSpeed = script-name=NetSpeed,update-interval=-1
+[Script]
+NetSpeed = type=generic,script-path=https://raw.githubusercontent.com/2023djash/Surge/main/Net_speed.js,argument=title=NetSpeed&iconfast=bolt&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb=3
