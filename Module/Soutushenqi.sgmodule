@@ -1,0 +1,12 @@
+#!name= 𝐒𝐡𝐨𝐮𝐭𝐮𝐒𝐡𝐞𝐧𝐪𝐢.𝐕𝐢𝐩
+#!desc= soutu
+
+
+
+[Script]
+
+_4 = type=http-response, pattern=^https?:\/\/.*\.soutushenqi\.com\/(api\/.+\/account\/(token|info)|cykj_community|v\d\/home\/dialog), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/QX/main/soutu.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% *.soutushenqi.com
