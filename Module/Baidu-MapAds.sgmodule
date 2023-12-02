@@ -1,0 +1,26 @@
+#!name=𝐁𝐚𝐢𝐃𝐬𝐲-𝐌𝐚𝐩.𝐀𝐝𝐬
+#!desc=𝐁𝐝𝐦𝐚𝐩
+
+[Map Local]
+^https?:\/\/(www|m)\.baidu\.com\/?($|\?(from=\w{8,9}|tn=&from=)) data="https://raw.githubusercontent.com/2023djash/Surge/main/html/baidu.html" header="Content-Type: text/html; charset=utf-8"
+
+# > 百度地图_搜索框下足记Tips@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+
+# > 百度地图_搜索推广@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+
+# > 百度地图_开屏广告|首页左上角广告@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+
+# > 百度地图_DNS处理@ddgksf2013
+^https?:\/\/httpdns\.baidubce\.com data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+
+# > 百度地图_各种商业推广@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+
+# > 百度地图_我的页面地图动态@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+
+[MITM]
+hostname = %APPEND% m.baidu.com,www.baidu.com,180.76.76.200,newclient.map.baidu.com,httpdns.baidubce.com
