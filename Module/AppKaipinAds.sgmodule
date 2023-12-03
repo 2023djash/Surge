@@ -2,7 +2,17 @@
 #!desc=𝐀𝐩𝐩𝐊𝐩
 [URL Rewrite]
 
-^https?:\/\/creditcardapp\.bankcomm\.cn\/mappweb_interface\/common\/(qryPopAds|qryLaunchAds)\.do _ reject-200
+#向日葵 开屏
+^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP _ reject
+#向日葵 首页文字
+^https:\/\/client-api-v2\.oray\.com\/materials\/ _ reject
+^https:\/\/api-std\.sunlogin\.oray\.com\/remotes\/switch\/ _ reject
+#向日葵 #发现页广告
+^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION _ reject
+#QQ空间
+^https:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ\/reserved\/ _ reject
+
+^https:\/\/adsmind\.gdtimg\.com\/ _ reject
 
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ _ reject
 ^https?:\/\/mime\.baidu\.com\/v\d\/IosStart\/getStartInfo _ reject
@@ -336,6 +346,28 @@ https://support.you.163.com/appversync/check.do _ reject
 
 ^https?:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/adv-filter\/AdInfoFilter\/getAdInfos$ _ reject
 
+^https?:\/\/creditcardapp\.bankcomm\.cn\/mappweb_interface\/common\/(qryPopAds|qryLaunchAds)\.do _ reject
+
+^https:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/45\/40\/trScKGVluZ6AKvNoAAKEel0Nu0k275\.png _ reject
+
+^https:\/\/creditcardapp\.bankcomm\.com\/CnsvMdbaptFinclipWeb\/api\/v1\/mop\/runtime\/control\/config-info\?isSign=0&timestamp _ reject
+^http:\/\/v26-fq-tts\.fqnovelvod\.com\/5d22eb6d48f7f557763e208a5a17c3d0\/656d1b0c\/video\/tos\/cn\/tos-cn-ve-2049\/ _ reject
+
+^http:\/\/ocsp\.digicert\.cn\/ _ reject
+
+^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit _ reject
+
+^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList _ reject
+
+^https:\/\/h\.139\.com\/ccopapi\/home\/getDynamicCard _ reject
+^https:\/\/h\.139\.com\/ccopapi\/searchPrompt\/qrySearchPrompt _ reject
+^http:\/\/mcmm\.caiyun\.feixin\.10086\.cn\/mcmm\/api\/IAdvert _ reject
+^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/adv-filter\/advertReported\/reported _ reject
+^http:\/\/mcmm\.caiyun\.feixin\.10086\.cn\/mcmm\/api\/v2\/getAdverts _ reject
+
+^https:\/\/yp-kfpt\.cmic\.site\/miniapp\/api\/v1\/mop\/runtime\/latest-basic-pack\?sdkPlat _ reject
+^https:\/\/open\.yun\.139\.com\/miniapp\/api\/v1\/mop\/runtime\/latest-basic-pack\?sdkPlat _ reject
+
 ^https?://passport\.biliintl\.com/x/intl/passport-login/.+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$35&sim_code=51503$5 302
 
 ^https?://app\.biliintl\.com/(x/)?(intl|dm|reply|history|v\d/(fav|msgfeed)).+?)(&s_locale=zh-Hans_[A-Z]{2})(.+?)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$6&sim_code=51503$8 302
@@ -355,7 +387,7 @@ cainiao_json3=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw
 cainiao_json4=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/Surge/main/cainiao-json.js
 
 [MITM]
-hostname = %APPEND% *.google.cn,*.uve.weibo.com,*biliapi.net,-*cdn*.biliapi.net,*.biliapi.net,-broadcast.chat.bilibili.com,101.201.175.228,103.41.167.*,103.41.167.226,103.41.167.234,103.41.167.235,103.41.167.236,103.41.167.237,103.91.210.141,116.85.2.14,116.85.2.15,118.178.214.118,118.89.204.198,180.76.76.200,182.92.251.113,4gimg.map.qq.com,acs.m.taobao.com,act.vip.iqiyi.com,ad.12306.cn,afd.baidu.com,api-new.app.acfun.cn,api.alipan.com,api.m.jd.com,appconf.mail.163.com,appwk.baidu.com,bdsp-x.jd.com,bgw.xinyue.qq.com,client.mail.163.com,cn-acs.m.cainiao.com,djcapp.game.qq.com,dsp-x.jd.com,flowplus.meituan.net,guide-acs.m.taobao.com,gw.alicdn.com,heic.alicdn.com,httpdns.baidubce.com,img.meituan.net,iphone.ac.qq.com,issuecdn.baidupcs.com,jdread-api.jd.com,m.client.10010.com,m.you.163.com,mbd.baidu.com,member.alipan.com,mgw.mpaas.cn-hangzhou.aliyuncs.com,mime.baidu.com,ms.jr.jd.com,newclient.map.baidu.com,otheve.beacon.qq.com,p*.meituan.net,res.kfc.com.cn,s3plus.meituan.net,sdk.alibaba.com.ailbaba.me,security.wechat.com,ssl.kohsocialapp.qq.com,support.you.163.com,testflight.apple.com,tiebac.baidu.com,update.pan.baidu.com,wmapi.meituan.com,www.meituan.com,wx.wxqqurl.cn,zconfig.alibabausercontent.com,mgw.mpaas.cn-hangzhou.aliyuncs.com,wxa.wxs.qq.com,m.you.163.co,*cupid.iqiyi.com,iphone.ac.qq.com,web.chelaile.net.cn,newclient.map.baidu.com,jdread-api.jd.com,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,router-app-api.jdcloud.com,mlol.qt.qq.com,app-gw.csdn.net,djcapp.game.qq.com,cn-acs.m.cainiao.com,creditcard.bankcomm.com,m.client.10010.com,ad.12306.cn,103.91.210.141,sdk.alibaba.com.ailbaba.me,bgw.xinyue.qq.com,pan.baidu.com,appwk.baidu.com,us.l.qq.com,open.e.kuaishou.com,mi.gdt.qq.com,api.pinduoduo.com,mime.baidu.com,peisongapi.meituan.com,r.inews.qq.com,img.meituan.net,mage*.if.qidian.com,overseas.weico.cc,118.178.214.118,acs.m.taobao.com,www.meituan.com,client.mail.163.com,interface*.music.163.com,res.kfc.com.cn,mp.weixin.qq.com,security.wechat.com,weixin110.qq.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,new.vip.weibo.cn,support.you.163.com,116.85.2.15,116.85.2.14,s3plus.meituan.net,flowplus.meituan.net,p*.meituan.net,testflight.apple.com,wmapi.meituan.com,appconf.mail.163.com,afd.baidu.com,mbd.baidu.com,wx.wxqqurl.cn,mp.weixin.qq.com,cn-acs.m.cainiao.com,guide-acs.m.taobao.com,sapphire.api.microsoftapp.net,mp.weixin.qq.com,180.76.76.200,newclient.map.baidu.com,httpdns.baidubce.com,118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226
+hostname = %APPEND% *.google.cn,*.uve.weibo.com,*biliapi.net,-*cdn*.biliapi.net,*.biliapi.net,-broadcast.chat.bilibili.com,101.201.175.228,103.41.167.*,103.41.167.226,103.41.167.234,103.41.167.235,103.41.167.236,103.41.167.237,103.91.210.141,116.85.2.14,116.85.2.15,118.178.214.118,118.89.204.198,180.76.76.200,182.92.251.113,4gimg.map.qq.com,acs.m.taobao.com,act.vip.iqiyi.com,ad.12306.cn,afd.baidu.com,api-new.app.acfun.cn,api.alipan.com,api.m.jd.com,appconf.mail.163.com,appwk.baidu.com,bdsp-x.jd.com,h.139.com,ad.mcloud.139.com,yp-kfpt.cmic.site,open.yun.139.com,creditcardapp.bankcomm.com,bgw.xinyue.qq.com,client.mail.163.com,cn-acs.m.cainiao.com,djcapp.game.qq.com,dsp-x.jd.com,flowplus.meituan.net,guide-acs.m.taobao.com,gw.alicdn.com,heic.alicdn.com,httpdns.baidubce.com,img.meituan.net,iphone.ac.qq.com,issuecdn.baidupcs.com,jdread-api.jd.com,m.client.10010.com,m.you.163.com,mbd.baidu.com,member.alipan.com,mgw.mpaas.cn-hangzhou.aliyuncs.com,mime.baidu.com,ms.jr.jd.com,newclient.map.baidu.com,otheve.beacon.qq.com,p*.meituan.net,res.kfc.com.cn,s3plus.meituan.net,sdk.alibaba.com.ailbaba.me,security.wechat.com,ssl.kohsocialapp.qq.com,support.you.163.com,testflight.apple.com,tiebac.baidu.com,update.pan.baidu.com,wmapi.meituan.com,www.meituan.com,wx.wxqqurl.cn,zconfig.alibabausercontent.com,mgw.mpaas.cn-hangzhou.aliyuncs.com,wxa.wxs.qq.com,m.you.163.co,*cupid.iqiyi.com,iphone.ac.qq.com,web.chelaile.net.cn,newclient.map.baidu.com,jdread-api.jd.com,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,router-app-api.jdcloud.com,mlol.qt.qq.com,app-gw.csdn.net,djcapp.game.qq.com,cn-acs.m.cainiao.com,creditcard.bankcomm.com,m.client.10010.com,ad.12306.cn,103.91.210.141,sdk.alibaba.com.ailbaba.me,bgw.xinyue.qq.com,pan.baidu.com,appwk.baidu.com,us.l.qq.com,open.e.kuaishou.com,mi.gdt.qq.com,api.pinduoduo.com,mime.baidu.com,peisongapi.meituan.com,r.inews.qq.com,img.meituan.net,mage*.if.qidian.com,overseas.weico.cc,118.178.214.118,acs.m.taobao.com,www.meituan.com,client.mail.163.com,interface*.music.163.com,res.kfc.com.cn,mp.weixin.qq.com,security.wechat.com,weixin110.qq.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,new.vip.weibo.cn,support.you.163.com,116.85.2.15,116.85.2.14,s3plus.meituan.net,flowplus.meituan.net,p*.meituan.net,testflight.apple.com,wmapi.meituan.com,appconf.mail.163.com,afd.baidu.com,mbd.baidu.com,wx.wxqqurl.cn,mp.weixin.qq.com,cn-acs.m.cainiao.com,client.app.coc.10086.cn,guide-acs.m.taobao.com,sapphire.api.microsoftapp.net,mp.weixin.qq.com,180.76.76.200,newclient.map.baidu.com,httpdns.baidubce.com,client-api-v2.oray.com,api-std.sunlogin.oray.com,pgdt.gtimg.cn,adsmind.gdtimg.com,118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226
 [Map Local]
 ^https?:\/\/www\.ahzs10000\.com\/palmhall\/client\/base\/newVerson_getStartUp\.action data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
 ^https?:\/\/www.icourse163.org\/.*?(Advertisement) data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-img.gif"
@@ -468,3 +500,4 @@ hostname = %APPEND% *.google.cn,*.uve.weibo.com,*biliapi.net,-*cdn*.biliapi.net,
 ^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 ^https:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
+^https:\/\/adsmind\.gdtimg\.com\/ date="https://raw.githubusercontent.com/2023djash/Surge/main/reject/blank.mp4"
