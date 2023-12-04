@@ -1,0 +1,11 @@
+#!name=mix
+#!desc=mix叮当猫
+
+
+[Script]
+
+mix_8 = type=http-response, pattern=^https?:\/\/cdn-bm\.camera360\.com\/api\/(mix\/(getinfo|purchase|recovery)|iap\/check-receipt), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/mix.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% cdn-bm.camera360.com
