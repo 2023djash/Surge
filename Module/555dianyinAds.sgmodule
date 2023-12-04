@@ -8,7 +8,7 @@
 
 [Script]
 
-555Ad_11 = type=http-response, pattern=^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/movie\/index_recommend, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/Surge/main/555Ad.js, timeout=60, script-update-interval=0
+555Ad_11 = type=http-response, pattern=^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/movie\/index_recommend, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/555Ad.js, timeout=60, script-update-interval=0
 
 [MITM]
 
