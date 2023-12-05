@@ -1,0 +1,19 @@
+#!name=𝐌𝐆𝐓𝐕.𝐕𝐢𝐩
+#!desc=𝐕𝐈𝐏@𝐁𝐚𝐛𝐲
+
+
+
+[MITM]
+
+hostname = %APPEND% *.mgtv.com
+
+[Script]
+
+mgtv1_7 = type=http-request, pattern=^http[s]?:\/\/mobile\.api\.mgtv\.com\/v[0-9]\/(playlist|video\/album|video\/relative|video\/list).*$, script-path=https://github.com/2023djash/2023djash/raw/main/js/Mgtv/mgtv1.js, script-update-interval=0, timeout=60
+
+MGTV_8 = type=http-request, pattern=https://mobile-stream.api.mgtv.com/v1/video/source?, script-path=https://github.com/2023djash/2023djash/raw/main/js/Mgtv/MGTV.js, script-update-interval=0, timeout=60
+
+mgtv_9 = type=http-response, pattern=https://nuc.api.mgtv.com/GetUserInfo, script-path=https://github.com/2023djash/2023djash/raw/main/js/Mgtv/mgtv.js, requires-body=true, max-size=-1, script-update-interval=0, timeout=60
+
+mgtv_10 = type=http-response, pattern=https://mobile-stream.api.mgtv.com/v1/video/source, script-path=https://github.com/2023djash/2023djash/raw/main/js/Mgtv/mgtv.js, requires-body=true, max-size=-1, script-update-interval=0, timeout=60
+
