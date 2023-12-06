@@ -46,7 +46,5 @@ IP-CIDR, 143.110.232.239/32, no-resolve
 IP-CIDR, 159.89.204.203/32, no-resolve
 IP-CIDR, 164.92.71.155, no-resolve
 IP-CIDR, 164.92.115.213/32, no-resolve
-IP-CIDR6, 2001:19f0:7001:55b3:5400:4ff:feab:ba8f/128, no-resolve
-IP-CIDR6, 2001:19f0:7001:8e6:5400:4ff:feab:b953/128, no-resolve
 IP-ASN, 14061, no-resolve
 IP-ASN, 20473, no-resolve
