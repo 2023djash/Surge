@@ -37,13 +37,3 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openaicom-api
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,45.76.214.191/32,no-resolve
-IP-CIDR,45.32.12.145/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP-CIDR,104.238.150.13/32,no-resolve
-IP-CIDR,143.198.200.27/32,no-resolve
-IP-CIDR,143.110.232.239/32,no-resolve
-IP-CIDR,159.89.204.203/32,no-resolve
-IP-CIDR,164.92.71.155,no-resolve
-IP-CIDR,164.92.115.213/32,no-resolve
