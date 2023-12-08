@@ -1,3 +1,2 @@
 - 👋 Hi, I’m @tianyu
-- 👀 I’m interested in ...唱歌
-- 🌱 I’m currently learning ...
+- 自用自用自用请勿转载。
