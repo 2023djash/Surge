@@ -1,0 +1,15 @@
+#!name=PsExpress
+#!desc=🔗 [2023/12/15 06:47:54] PsExpress
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/2023djash/QX/main/Remote/PsExpress.js/_end_/PsExpress.sgmodule?type=qx-rewrite&target=surge-module&del=true
+
+
+[MITM]
+
+hostname = %APPEND% lcs-mobile-cops.adobe.io
+
+[Script]
+
+PSExpress = type=http-response, pattern=https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/PSExpress.js, requires-body=true, max-size=-1, timeout=60
+
