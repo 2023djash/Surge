@@ -1,26 +1,22 @@
 #!name=𝐁𝐚𝐢𝐝𝐮𝐌𝐚𝐩.𝐀𝐝𝐬
 #!desc=𝐁𝐃
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1089.png
 
 [MITM]
 
-hostname = %APPEND% newclient.map.baidu.com,yongche.baidu.com
+hostname = newclient.map.baidu.com,yongche.baidu.com
 
-[Map Local]
+[URL Rewrite]
 
 # > 百度地图_搜索框下足记Tips@ddgksf2013
-^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
-
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc - reject-200
 # > 百度地图_搜索推广@ddgksf2013
-^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
-
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw - reject-200
 # > 百度地图_开屏广告|首页左上角广告@ddgksf2013
-^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
-
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads - reject-200
 # > 百度地图_DNS处理@ddgksf2013
-^https?:\/\/httpdns\.baidubce\.com data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
-
+^https?:\/\/httpdns\.baidubce\.com - reject-200
 # > 百度地图_各种商业推广@ddgksf2013
-^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
-
+^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing - reject-200
 # > 百度地图_我的页面地图动态@ddgksf2013
-^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-200.txt"
+^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic - reject-200
