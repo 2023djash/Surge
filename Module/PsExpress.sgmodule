@@ -1,8 +1,5 @@
 #!name=PsExpress
-#!desc=🔗 [2023/12/15 06:47:54] PsExpress
-
-# 🔗 模块链接
-#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/2023djash/QX/main/Remote/PsExpress.js/_end_/PsExpress.sgmodule?type=qx-rewrite&target=surge-module&del=true
+#!desc=PsExpress
 
 
 [MITM]
