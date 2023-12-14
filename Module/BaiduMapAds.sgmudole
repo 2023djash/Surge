@@ -8,29 +8,29 @@ hostname = %APPEND% newclient.map.baidu.com,yongche.baidu.com
 [Map Local]
 
 # 组件包
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_aide_module data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_aide_module data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_card_ugc data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_card_ugc data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_trip_route_tab data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_trip_route_tab data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?oem= data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?oem= data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
 # 首页 小横条,左上角动图
-^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/newclient\.map\.baidu\.com\/grow-engine\/api\/common\/userHome\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/newclient\.map\.baidu\.com\/grow-engine\/api\/common\/userHome\? data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
 # 打车页
-^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/notice data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/notice data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/yongche\.baidu\.com\/gomarketing\/api\/activity\/talos\/activitycard\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/yongche\.baidu\.com\/gomarketing\/api\/activity\/talos\/activitycard\? data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/yongche\.baidu\.com\/gomarketing\/api\/popup\/getentrancecordovaurl data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/yongche\.baidu\.com\/gomarketing\/api\/popup\/getentrancecordovaurl data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
-^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/baseinfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/yongche\.baidu\.com\/goorder\/passenger\/baseinfo data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-dict.json"
 
 [Script]
 
