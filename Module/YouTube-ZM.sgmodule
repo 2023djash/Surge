@@ -20,12 +20,27 @@ youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com
 
 youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/youtube.response.beta.js
 
-YouTube-Dualsub = type=http-response,pattern=https:\/\/www.youtube.com\/api\/timedtext.+,requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/Dualsub.js
+# DualSubs.YouTube.Player.response.json
+DualSubs.YouTube.Player.response = type=http-response, pattern=^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/YTBzm/YouTube.Player.response.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
 
-YouTube-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.youtube.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/Dualsub.js
+# DualSubs.YouTube.Player.response.proto
+DualSubs.YouTube.Player.response = type=http-response, pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/YTBzm/YouTube.Player.response.js, requires-body=true, binary-body-mode=true, max-size=-1, timeout=60
+
+# DualSubs.YouTube.TimedText.request
+DualSubs.YouTube.TimedText.request = type=http-request, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/YTBzm/YouTube.TimedText.request.js, binary-body-mode=true, timeout=60
+
+# DualSubs.Subtitles.Composite.response
+DualSubs.Subtitles.Composite.response = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/YTBzm/Composite.response.js, requires-body=true, max-size=-1, timeout=60
 
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/blank.txt" header="Content-Type: application/vnd.yt-ump"
+^https?:\/\/([\w-]+)\.googlevideo\.com\/initplayback(\?.*oad=.+)$ data="https://raw.githubusercontent.com/2023djash/Surge/main/reject/reject-img.gif"
+
+
+
+[Rule]
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT-NO-DROP
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com,*.youtube.com
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com,*.youtube.com,www.youtube.com,m.youtube.com, tv.youtube.com,-redirector*.googlevideo.com
+
