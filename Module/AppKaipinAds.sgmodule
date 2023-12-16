@@ -366,17 +366,17 @@ https://support.you.163.com/appversync/check.do _ reject
 
 [Script]
 
-jingdongAds=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms),requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/jingdongAds.js
+jingdongAds = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms),requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/jingdongAds.js, timeout=60, script-update-interval=0
 
-applet=type=http-response,pattern=^(https?://)?([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+[a-zA-Z]{2,}(:\d+)?/wp-json/[a-zA-Z0-9_-]+/(mp\/)?v\d/posts,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/applet.js
+applet = type=http-response, pattern=^(https?://)?([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+[a-zA-Z]{2,}(:\d+)?/wp-json/[a-zA-Z0-9_-]+/(mp\/)?v\d/posts,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/applet.js, timeout=60, script-update-interval=0
 
-cainiao=type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js
+cainiao = type=http-response, pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js, timeout=60, script-update-interval=0
 
-cainiao2=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.protocol\.homepage\.get\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js
+cainiao2 = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.protocol\.homepage\.get\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js, timeout=60, script-update-interval=0
 
-cainiao3=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js
+cainiao3 = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js, timeout=60, script-update-interval=0
 
-cainiao4=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js
+cainiao4 = type=http-response, pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword,requires-body=1,script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/cainiao.js, timeout=60, script-update-interval=0
 
 bilibili_json = type=http-response, pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
 
