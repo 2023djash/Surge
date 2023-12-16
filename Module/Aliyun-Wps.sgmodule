@@ -1,10 +1,8 @@
-#!name=𝐀𝐥𝐢𝐲𝐮𝐧-𝐖𝐩𝐬.𝐕𝐢𝐩
-#!desc=𝐀𝐋𝐢-𝐖𝐩𝐬
+#!name=𝐀𝐥𝐢𝐲𝐮𝐧.𝐕𝐢𝐩
+#!desc=𝐀𝐋𝐢
 
 [Script]
 alidrive_8 = type=http-response, pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/Aliyun.js, timeout=60, script-update-interval=0
 
-WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/Wps.js, timeout=60, script-update-interval=0
-
 [MITM]
-hostname = %APPEND% *.aliyundrive.com,*.alipan.com,vas.wps.cn,account.wps.cn
+hostname = %APPEND% *.aliyundrive.com,*.alipan.com
