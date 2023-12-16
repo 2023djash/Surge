@@ -22,6 +22,8 @@
 # 移动
 ^https:\/\/api\.miguvideo\.com\/login\/ _ reject-dict
 
+^http:\/\/api-fd\.dutils\.com\/privacy\/ reject-dict
+
 ^https:\/\/push\.it\.10086\.cn\/mc\/receipt\/iosBadge\?appkey _ reject-dict
 
 ^https:\/\/app-sc\.miguvideo\.com\/app-management\/v1\/staticcache\/ _ reject-dict
