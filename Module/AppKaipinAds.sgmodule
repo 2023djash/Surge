@@ -18,6 +18,7 @@
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing _ reject-200
 
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic _ reject-200
+
 # 移动
 ^https:\/\/api\.miguvideo\.com\/login\/ _ reject-dict
 
