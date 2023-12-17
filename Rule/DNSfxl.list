@@ -1,14 +1,14 @@
 # From Shadowrocket Default Profile
-DOMAIN-SUFFIX,dnsleaktest.com,DIRECT
-DOMAIN-SUFFIX,dnsleak.com,DIRECT
-DOMAIN-SUFFIX,expressvpn.com,DIRECT
-DOMAIN-SUFFIX,nordvpn.com,DIRECT
-DOMAIN-SUFFIX,surfshark.com,DIRECT
-DOMAIN-SUFFIX,ipleak.net,DIRECT
-DOMAIN-SUFFIX,perfect-privacy.com,DIRECT
-DOMAIN-SUFFIX,browserleaks.com,DIRECT
-DOMAIN-SUFFIX,browserleaks.org,DIRECT
-DOMAIN-SUFFIX,vpnunlimited.com,DIRECT
-DOMAIN-SUFFIX,whoer.net,DIRECT
-DOMAIN-SUFFIX,whrq.net,DIRECT
-DOMAIN-KEYWORD,leak,DIRECT
+DOMAIN-SUFFIX,dnsleaktest.com
+DOMAIN-SUFFIX,dnsleak.com
+DOMAIN-SUFFIX,expressvpn.com
+DOMAIN-SUFFIX,nordvpn.com
+DOMAIN-SUFFIX,surfshark.com
+DOMAIN-SUFFIX,ipleak.net
+DOMAIN-SUFFIX,perfect-privacy.com
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.org
+DOMAIN-SUFFIX,vpnunlimited.com
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,whrq.net
+DOMAIN-KEYWORD,leak
