@@ -1,0 +1,28 @@
+#!name=𝐂𝐨𝐨𝐥𝐀𝐩𝐤.𝐀𝐝𝐬
+#!desc=酷安
+
+
+[MITM]
+
+hostname = %APPEND% api.coolapk.com
+
+[URL Rewrite]
+# 屏蔽热词
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch _ reject-dict
+
+[Script]
+# 开屏广告
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/main\/init, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/coolapk.js, requires-body=true, max-size=-1, timeout=60
+
+# 推广广告
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/dataList, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/coolapk.js, requires-body=true, max-size=-1, timeout=60
+
+# 首页广告
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/main\/indexV8, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/coolapk.js, requires-body=true, max-size=-1, timeout=60
+
+# 评论广告
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/replyList, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/coolapk.js, requires-body=true, max-size=-1, timeout=60
+
+# 商品推广
+coolapk = type=http-response, pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/detail, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/coolapk.js, requires-body=true, max-size=-1, timeout=60
+
