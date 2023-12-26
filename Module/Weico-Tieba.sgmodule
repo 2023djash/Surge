@@ -1,4 +1,4 @@
-#!name = 𝐖𝐁-𝐓𝐁.𝐀𝐝𝐬
+#!name = 𝐖𝐞𝐢𝐜𝐨-𝐓𝐁.𝐀𝐝𝐬
 #!desc= 𝐖𝐛-𝐓𝐛
 #!author = RuCu6 zmqcherish
 #!update = 2023-10-23 12:55
@@ -97,3 +97,4 @@ tieba-proto_6 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.b
 [MITM]
 
 hostname = %APPEND% *.weibo.cn,*.weibo.com,sinaurl.cn,t.cnweibo.cn,tiebac.baidu.com
+
