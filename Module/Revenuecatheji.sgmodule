@@ -1,4 +1,4 @@
-#!name=𝐑𝐞𝐯𝐞𝐧𝐮𝐞𝐜𝐚𝐭𝐇𝐉.𝐕𝐢𝐩
+#!name=𝐑𝐞𝐯𝐞𝐧𝐇𝐉.𝐕𝐢𝐩
 #!desc=𝐑𝐞𝐇𝐉
 
 # Vsco Photomator 车票票 ChatAi Diarly日历 
@@ -18,3 +18,4 @@ RevenuecatHeji_6 = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.
 [MITM]
 
 hostname = %APPEND% api.revenuecat.com,app-measurement.com
+
