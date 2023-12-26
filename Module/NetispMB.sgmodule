@@ -1,4 +1,4 @@
-#!name=𝐍𝐞𝐭𝐈𝐒𝐏𝐱𝐱.𝐦𝐛
+#!name=𝐍𝐞𝐭𝐈𝐬𝐩𝐗𝐱.𝐦𝐛
 #!desc=𝐌𝐁
 
 [Script]
@@ -6,3 +6,4 @@ NetISP = type=generic,timeout=8,script-path=https://raw.githubusercontent.com/20
 
 [Panel]
 NetISP = script-name=NetISP,update-interval=43200
+
