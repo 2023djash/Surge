@@ -1,0 +1,10 @@
+#!name=𝐀𝐨𝐫𝐮𝐚𝐧𝐗𝐥.𝐕𝐢𝐩
+#!desc=𝐀𝐑𝐤𝐭
+
+[Script]
+
+tongyong3_25 = type=http-response, pattern=^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/2023djash/2023djash/main/js/aoruankoutuxl.js, timeout=60, script-update-interval=0
+
+[MITM]
+hostname = %APPEND% *.aoscdn.com,*.apsapp.cn
+
