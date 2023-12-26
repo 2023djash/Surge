@@ -1,4 +1,4 @@
-#!name=𝐘𝐨𝐮𝐭𝐮𝐛𝐞-𝐙𝐌.𝐀𝐝𝐬
+#!name=𝐘𝐮𝐭𝐮𝐛𝐙𝐌.𝐀𝐝𝐬
 #!desc=𝐘𝐓𝐁
 
 # > Feature
@@ -43,4 +43,5 @@ AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT-NO-DROP
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com,*.youtube.com,www.youtube.com,m.youtube.com, tv.youtube.com,-redirector*.googlevideo.com
+ 
 
