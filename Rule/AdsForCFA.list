@@ -1,20 +1,4 @@
-## [Adblock Plus 1.1]
-## ! Version: 202406190215
-## ! Title: EasyPrivacy
-## ! Last modified: 19 Jun 2024 02:15 UTC
-## ! Expires: 4 days (update frequency)
-## ! *** easylist:template_header.txt ***
-## ! 
-## ! Please report any unblocked adverts or problems
-## ! in the forums (https://forums.lanik.us/)
-## ! or via e-mail (easylist@protonmail.com).
-## ! 
-## ! Homepage: https://easylist.to/
-## ! Licence: https://easylist.to/pages/licence.html
-## ! GitHub issues: https://github.com/easylist/easylist/issues
-## ! GitHub pull requests: https://github.com/easylist/easylist/pulls
-
-
+## [Adblock Plus]
 DOMAIN-SUFFIX,00px.net
 DOMAIN-SUFFIX,1bliq.io
 DOMAIN-SUFFIX,1cros.net
