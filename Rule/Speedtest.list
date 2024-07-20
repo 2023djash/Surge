@@ -4,5 +4,8 @@ DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
 DOMAIN-SUFFIX,speed.dler.io
+DOMAIN-SUFFIX,speedsin.phoenixnap.com
+DOMAIN-SUFFIX,metricreceiver.cellrebel.com
+DOMAIN-SUFFIX,fdcservers.net
 DOMAIN-KEYWORD,speedtest
 USER-AGENT,SpeedTest*
