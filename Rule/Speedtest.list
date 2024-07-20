@@ -7,5 +7,7 @@ DOMAIN-SUFFIX,speed.dler.io
 DOMAIN-SUFFIX,speedsin.phoenixnap.com
 DOMAIN-SUFFIX,metricreceiver.cellrebel.com
 DOMAIN-SUFFIX,fdcservers.net
+DOMAIN-SUFFIX,m.optout.ziffdavis.com
+dOMAIN-SUFFIX,api.wlvpn.com
 DOMAIN-KEYWORD,speedtest
 USER-AGENT,SpeedTest*
