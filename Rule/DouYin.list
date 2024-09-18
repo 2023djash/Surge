@@ -1,6 +1,6 @@
 # NAME: Douyin
-DOMAIN,SUFFIX,static.bytednsdoc.com
-DOMAIN,SUFFIX,abtest.zjcdn.com
+DOMAIN,static.bytednsdoc.com
+DOMAIN,abtest.zjcdn.com
 DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,douyincdn.com
 DOMAIN-SUFFIX,douyinpic.com
@@ -17,3 +17,5 @@ DOMAIN-SUFFIX,lq.zijieapi.com
 DOMAIN-SUFFIX,tos.bytegecko.com
 DOMAIN-SUFFIX,douyin.starrydyn.com
 DOMAIN-SUFFIX,tos.byteeffecttos.com
+DOMAIN,lf3-static.bytednsdoc.com
+DOMAIN,v5-dy-o-abtest.zjcdn.com
